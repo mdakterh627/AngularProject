@@ -1,8 +1,19 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngRoute']);
+app.config(function($routeProvider){
+    $routeProvider.when("/",{
+        templateUrl: "src/login.html",
+        controller:"authController"
+    }).when("/SignUp.html",{
+        templateUrl: "src/SignUp.html",
+        controller: "authController"
+    })
+});
 app.controller('authController', function($scope){
     $scope.login = function(){
+        $scope.test="dddd"
         if($scope.userName == 'akterh' && $scope.password=='12345'){
-            alert("Login Success")
+            window.location.href="/Dashboard.html"
+            // alert("Login Success")
         }
     };
     $scope.signUp = function(){
