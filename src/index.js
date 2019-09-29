@@ -11,7 +11,7 @@ app.config(function($routeProvider){
 app.controller('authController', function($scope){
     $scope.login = function(){
         $scope.test="dddd"
-        if($scope.userName == 'akterh' && $scope.password=='12345'){
+        if($scope.userName == 'ah' && $scope.password=='345'){
             window.location.href="/Dashboard.html"
             // alert("Login Success")
         }
