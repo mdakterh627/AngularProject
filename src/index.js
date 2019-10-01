@@ -8,16 +8,24 @@ app.config(function($routeProvider){
         controller: "authController"
     })
 });
-app.controller('authController', function($scope){
+app.controller('authController', function($scope, $http){
     $scope.login = function(){
-        $scope.test="dddd"
-        if($scope.userName == 'ah' && $scope.password=='345'){
+        $scope.test="Please enter a valid password or user name"
+        if($scope.userName == 'akter' && $scope.password=='1234'){
             window.location.href="/Dashboard.html"
             // alert("Login Success")
         }
     };
     $scope.signUp = function(){
         alert($scope.userName)
+    }
+    function getData(){
+        $http.get("https://reqres.in/api/users?page=2").then(function(response){
+            console.log('response', response)
+            $scope.data = response.data;
+
+        })
+
     }
 
 });

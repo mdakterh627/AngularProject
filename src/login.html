@@ -1,9 +1,9 @@
 <form>
     <center>
-        <h1>{{test}}</h1>
+        
         <div class="container">
-            <div>
-                User Name:
+            <table border="1px solid black">
+                <tr>User Name:</tr>
 
                 <input type="text" name="login_email" class="form-control" placeholder="Username or email" value="User Name"
                     ng-model="userName" />
@@ -21,6 +21,7 @@
             <input type="submit" value="Login" class="btn btn-success btn-custom" ng-click="login()">
             <a href="/src/SignUp.html">SignUp</a>
         </div>
+        <h5>{{test}}</h5>
     </center>
 
 </form>

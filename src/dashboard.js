@@ -1,7 +1,7 @@
 var dashApp = angular.module('dashApp', ['ngRoute']);
 dashApp.config(function($routeProvider){
     $routeProvider.when("/", {
-        templateUrl: "src/listProduct.html",
+        templateUrl: "src/listBuss.html",
         controller: "productController"
     }).when("/addProduct", {
         templateUrl: "src/addProduct.html",
