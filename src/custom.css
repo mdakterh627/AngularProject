@@ -1,4 +1,4 @@
-/*Main CSS*/
+﻿/*Main CSS*/
 
 
 /*Login Signup Page*/
@@ -230,7 +230,16 @@ li,ul{
     width: 100%;
 }
 
-.add-project {
+.add-User {
+    background: #5584ff none repeat scroll 0 0;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 27px 10px 45px;
+    position: relative;
+}
+.login {
     background: #5584ff none repeat scroll 0 0;
     border-radius: 100px;
     color: #ffffff;
@@ -246,7 +255,7 @@ li,ul{
     text-decoration: none;
 }
 
-.add-project::before {
+.add-User::before {
     background: rgba(0, 0, 0, 0) url("../images/plus.png") no-repeat scroll 0 0;
     content: "";
     ;
@@ -257,7 +266,22 @@ li,ul{
     width: 12px;
 }
 
-.add-project:hover {
+.login::before {
+    background: rgba(0, 0, 0, 0) url("../images/plus.png") no-repeat scroll 0 0;
+    content: "";
+    ;
+    height: 12px;
+    left: 17px;
+    position: absolute;
+    top: 12px;
+    width: 12px;
+}
+
+.add-User:hover {
+    color: #ffffff;
+}
+
+.login:hover {
     color: #ffffff;
 }
 
@@ -491,6 +515,11 @@ header {
     display: none;
 }
 .close, .close:focus, .close:hover {
+    color: #fff;;
+    opacity: 1;
+    text-shadow: none;
+}
+.save, .save:focus, .save:hover {
     color: #fff;;
     opacity: 1;
     text-shadow: none;
